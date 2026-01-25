@@ -1,0 +1,491 @@
+<robot
+  name="urdf_v1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-2.0893E-07 0.0041679 9.3094E-07"
+        rpy="0 0 0" />
+      <mass
+        value="14.734" />
+      <inertia
+        ixx="0.1488"
+        ixy="-5.4228E-05"
+        ixz="2.5595E-10"
+        iyy="0.31397"
+        iyz="5.955E-14"
+        izz="0.21992" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rotor_8">
+    <inertial>
+      <origin
+        xyz="4.62453102634264E-06 -1.36035110387955E-05 0.0189450109928282"
+        rpy="0 0 0" />
+      <mass
+        value="0.0244366398238316" />
+      <inertia
+        ixx="3.49254922795333E-06"
+        ixy="2.79485163098058E-10"
+        ixz="-2.10318176610885E-10"
+        iyy="3.49255285273276E-06"
+        iyz="-2.37159004485659E-10"
+        izz="3.86597691801394E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint8"
+    type="continuous">
+    <origin
+      xyz="-0.325170017772255 -0.0141684013089474 -0.276109611659583"
+      rpy="0.000232371686380126 -0.785398139325826 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_8" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="4"
+      velocity="100" />
+  </joint>
+  <link
+    name="rotor_7">
+    <inertial>
+      <origin
+        xyz="1.55679168892808E-05 9.30819950895057E-07 0.0189450471440553"
+        rpy="0 0 0" />
+      <mass
+        value="0.0244363750189506" />
+      <inertia
+        ixx="3.49276826287335E-06"
+        ixy="3.62909279931777E-10"
+        ixz="2.0437245136511E-10"
+        iyy="3.492477139497E-06"
+        iyz="1.60088762987052E-10"
+        izz="3.86607914620668E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint7"
+    type="continuous">
+    <origin
+      xyz="-0.325170019388382 -0.0141684013094808 0.276095750152947"
+      rpy="-3.14159265358979 -0.785398160470796 -3.14126403039741" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_7" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="4"
+      velocity="100" />
+  </joint>
+  <link
+    name="rotor_5">
+    <inertial>
+      <origin
+        xyz="-1.48027329668343E-05 2.7878779819801E-05 0.00894450184565393"
+        rpy="0 0 0" />
+      <mass
+        value="0.0244371770245363" />
+      <inertia
+        ixx="3.49220096263469E-06"
+        ixy="-6.98336632976488E-10"
+        ixz="1.50834984094511E-10"
+        iyy="3.4939223583184E-06"
+        iyz="9.58322138643858E-11"
+        izz="3.86684835465389E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="continuous">
+    <origin
+      xyz="-0.102498437544931 -0.0315382854781964 0.247193069898346"
+      rpy="-1.5707963267949 0 0.000328623192377829" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="4"
+      velocity="100" />
+  </joint>
+  <link
+    name="rotor_3">
+    <inertial>
+      <origin
+        xyz="-4.89383471369287E-06 1.41615277371443E-06 0.008944407200835"
+        rpy="0 0 0" />
+      <mass
+        value="0.0244371622039775" />
+      <inertia
+        ixx="3.49339420900529E-06"
+        ixy="9.21279589166022E-10"
+        ixz="-1.11009465937299E-10"
+        iyy="3.49267152194999E-06"
+        iyz="1.88065408438004E-10"
+        izz="3.86679664089844E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="0.102501551408522 -0.0314709869754342 0.24719307049831"
+      rpy="-1.5707963267949 0 0.000328623192382617" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="4"
+      velocity="100" />
+  </joint>
+  <link
+    name="rotor_1">
+    <inertial>
+      <origin
+        xyz="1.12679636523616E-05 -6.79965874289534E-06 0.00894428047711071"
+        rpy="0 0 0" />
+      <mass
+        value="0.0244378920109182" />
+      <inertia
+        ixx="3.49265996434687E-06"
+        ixy="-6.12615264713754E-10"
+        ixz="-2.21860412930053E-10"
+        iyy="3.49370355258042E-06"
+        iyz="9.63007824469116E-11"
+        izz="3.86690913750961E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="continuous">
+    <origin
+      xyz="0.332232736124 -0.0139523635095213 0.269024684265067"
+      rpy="3.14159265358979 0.785398166324111 -3.14126403039741" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="4"
+      velocity="100" />
+  </joint>
+  <link
+    name="rotor_2">
+    <inertial>
+      <origin
+        xyz="9.86405737091189E-06 -2.33806497734745E-06 0.00894455715541831"
+        rpy="0 0 0" />
+      <mass
+        value="0.0244376644238354" />
+      <inertia
+        ixx="3.49299371919141E-06"
+        ixy="-5.45162646422325E-10"
+        ixz="-4.62236924122849E-10"
+        iyy="3.4929763454462E-06"
+        iyz="-6.56229941262414E-11"
+        izz="3.86665740155985E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="0.332232737698722 -0.0139523635089882 -0.269038541923723"
+      rpy="-0.000232371685020103 0.785398133472459 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="4"
+      velocity="100" />
+  </joint>
+  <link
+    name="rotor_4">
+    <inertial>
+      <origin
+        xyz="-3.89575587944613E-06 -1.40927747388497E-05 0.00894436434929163"
+        rpy="0 0 0" />
+      <mass
+        value="0.02443751530369" />
+      <inertia
+        ixx="3.49270617884766E-06"
+        ixy="-9.00969398681955E-10"
+        ixz="-2.05222220806786E-10"
+        iyy="3.49348262057456E-06"
+        iyz="-1.0037111917373E-10"
+        izz="3.86691972684812E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="0.102501552855458 -0.0314709869749588 -0.247206929501689"
+      rpy="1.5711249499873 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="4"
+      velocity="100" />
+  </joint>
+  <link
+    name="rotor_6">
+    <inertial>
+      <origin
+        xyz="-2.49710721906826E-05 -5.92004406163582E-06 0.00894424755609069"
+        rpy="0 0 0" />
+      <mass
+        value="0.0244375097418715" />
+      <inertia
+        ixx="3.49347192822609E-06"
+        ixy="-1.32046545743929E-09"
+        ixz="1.19346560540571E-10"
+        iyy="3.49294357508223E-06"
+        iyz="9.96644763789885E-11"
+        izz="3.86702365549128E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdf_v1/meshes/rotor_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="continuous">
+    <origin
+      xyz="-0.102498436075236 -0.0315383547281894 -0.247206930101654"
+      rpy="1.5711249499873 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="4"
+      velocity="100" />
+  </joint>
+</robot>

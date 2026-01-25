@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+    <materials>
+        <material name="Neutral" density="1968.0" restitution="0.5"/>
+    </materials>
+
+    <looks>
+        <look name="Gray" rgb="0.6 0.6 0.6" roughness="0.5"/>
+        <look name="Yellow" rgb="1.0 1.0 0.0" roughness="0.3"/>
+        <look name="Rotor" rgb="0.8 0.8 0.9" roughness="0.3"/>
+    </looks>
+
+    <environment>
+        <ned latitude="40.0" longitude="3.0" altitude="0.0"/>
+        <ocean>
+            <water density="1031.0" jerlov="0.2" temperature="15.0"/>
+            <waves height="0.0"/>
+            <particles enabled="true"/>
+            <current type="uniform">
+                <velocity xyz="0.0 0.0 0.0"/>
+            </current>
+        </ocean>
+    </environment>
+
+    <robot name="rovio" fixed="true" self_collisions="false">
+        <base_link name="base_link" type="model" physics="submerged" buoyant="true">
+            <physical>
+                <mesh filename="$(find stonefish_ros2)/resources/meshes/base_link.obj" scale="1.0"/>
+                <origin rpy="0.0 0.0 0.0" xyz="0 0.0 0.0"/>
+            </physical>
+            <mass value="14.734"/>
+            <inertia xyz="0.1488 0.31397 0.21992"/>
+            <cg xyz="-2.0931E-07 0.0041679 9.3029E-07" rpy="0 0 0"/>
+            <material name="Neutral"/>
+            <look name="Yellow"/>
+        </base_link>
+
+        <!-- NED frame: +Z is down. Start 0.5 m below the surface. -->
+        <!-- Apply a 180° roll so the model is not spawned inverted. -->
+        <world_transform xyz="0.0 0.0 -0.5" rpy="-1.570796 0 0"/>        
+
+        <!-- Actuators: SIMPLE_THRUSTER avoids rotor dynamics/thrust model requirements -->
+        <actuator name="Thruster1" type="simple_thruster">
+            <specs lower_thrust_limit="-100.0" upper_thrust_limit="100.0" inverted="false"/>
+            <propeller diameter="0.1" right="true">
+                <mesh filename="$(find stonefish_ros2)/resources/meshes/rotor_1.obj" scale="1.0"/>
+                <material name="Neutral"/>
+                <look name="Rotor"/>
+            </propeller>
+            <origin xyz="0.33223 -0.013952 0.26902" rpy="-3.14 0.7854 6.28"/>
+            <link name="base_link"/>
+            <!-- <watchdog timeout="0.2"/> -->
+        </actuator>
+
+        <actuator name="Thruster2" type="simple_thruster">
+            <specs lower_thrust_limit="-100.0" upper_thrust_limit="100.0" inverted="false"/>
+            <propeller diameter="0.1" right="false">
+                <mesh filename="$(find stonefish_ros2)/resources/meshes/rotor_2.obj" scale="1.0"/>
+                <material name="Neutral"/>
+                <look name="Rotor"/>
+            </propeller>
+            <origin xyz="0.33223 -0.013952 -0.26904" rpy="3.14 -2.3546 3.14126403358979"/>
+            <link name="base_link"/>
+            <!-- <watchdog timeout="0.2"/> -->
+        </actuator>
+
+        <actuator name="Thruster3" type="simple_thruster">
+            <specs lower_thrust_limit="-100.0" upper_thrust_limit="100.0" inverted="false"/>
+            <propeller diameter="0.1" right="true">
+                <mesh filename="$(find stonefish_ros2)/resources/meshes/rotor_3.obj" scale="1.0"/>
+                <material name="Neutral"/>
+                <look name="Rotor"/>
+            </propeller>
+            <origin xyz="0.1025 -0.031471 0.24719" rpy="0 0 -1.57049265358979"/>
+            <link name="base_link"/>
+            <!-- <watchdog timeout="0.2"/> -->
+        </actuator>
+
+        <actuator name="Thruster4" type="simple_thruster">
+            <specs lower_thrust_limit="-100.0" upper_thrust_limit="100.0" inverted="false"/>
+            <propeller diameter="0.1" right="false">
+                <mesh filename="$(find stonefish_ros2)/resources/meshes/rotor_4.obj" scale="1.0"/>
+                <material name="Neutral"/>
+                <look name="Rotor"/>
+            </propeller>
+            <origin xyz="0.1025 -0.031471 -0.24721" rpy="0 0 -1.57049265358979"/>
+            <link name="base_link"/>
+            <!-- <watchdog timeout="0.2"/> -->
+        </actuator>
+
+        <actuator name="Thruster5" type="simple_thruster">
+            <specs lower_thrust_limit="-100.0" upper_thrust_limit="100.0" inverted="false"/>
+            <propeller diameter="0.1" right="true">
+                <mesh filename="$(find stonefish_ros2)/resources/meshes/rotor_5.obj" scale="1.0"/>
+                <material name="Neutral"/>
+                <look name="Rotor"/>
+            </propeller>
+            <origin xyz="-0.1025 -0.031538 0.24719" rpy="0 0 -1.57049265358979"/>
+            <link name="base_link"/>
+            <!-- <watchdog timeout="0.2"/> -->
+        </actuator>
+
+        <actuator name="Thruster6" type="simple_thruster">
+            <specs lower_thrust_limit="-100.0" upper_thrust_limit="100.0" inverted="false"/>
+            <propeller diameter="0.1" right="false">
+                <mesh filename="$(find stonefish_ros2)/resources/meshes/rotor_6.obj" scale="1.0"/>
+                <material name="Neutral"/>
+                <look name="Rotor"/>
+            </propeller>
+            <origin xyz="-0.102498436314442 -0.0315383548267675 -0.247206930341102" rpy="0 9.63351908826969e-13 -1.57046770360251"/>
+            <link name="base_link"/>
+            <!-- <watchdog timeout="0.2"/> -->
+        </actuator>
+
+        <actuator name="Thruster7" type="simple_thruster">
+            <specs lower_thrust_limit="-100.0" upper_thrust_limit="100.0" inverted="false"/>
+            <propeller diameter="0.1" right="true">
+                <mesh filename="$(find stonefish_ros2)/resources/meshes/rotor_7.obj" scale="1.0"/>
+                <material name="Neutral"/>
+                <look name="Rotor"/>
+            </propeller>
+            <origin xyz="-0.325170019627587 -0.0141684014080589 0.276095749913499" rpy="0 -0.785398166324101 0.00032862319238326"/>
+            <link name="base_link"/>
+            <!-- <watchdog timeout="0.2"/> -->
+        </actuator>
+
+        <actuator name="Thruster8" type="simple_thruster">
+            <specs lower_thrust_limit="-100.0" upper_thrust_limit="100.0" inverted="false"/>
+            <propeller diameter="0.1" right="false">
+                <mesh filename="$(find stonefish_ros2)/resources/meshes/rotor_8.obj" scale="1.0"/>
+                <material name="Neutral"/>
+                <look name="Rotor"/>
+            </propeller>
+            <origin xyz="-0.325170018011461 -0.0141684014075255 -0.276109611899031" rpy="0 0.785398160470769 0.00032862319238326"/>
+            <link name="base_link"/>
+            <!-- <watchdog timeout="0.2"/> -->
+        </actuator>
+
+        <ros_publisher thrusters="/rovio/thrusters/state"/>
+        <ros_subscriber thrusters="/rovio/thrusters/command"/>
+    </robot>
+</scenario>
