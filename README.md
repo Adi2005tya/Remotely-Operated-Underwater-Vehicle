@@ -33,6 +33,8 @@ This iteration resolves key limitations of the previous ROV (positive buoyancy p
 * **URDF & Mesh Optimization:** Decimated SolidWorks STL mesh complexity from ~200,000 faces down to ~20,000 faces to eliminate simulation lag.
 * **Axis Realignment:** Re-oriented URDF mesh coordinates from ENU (East-North-Up) to NED (North-East-Down) convention using Blender for Stonefish compatibility.
 * **Teleoperation:** Real-time joystick control integrated with the virtual underwater model.
+  
+<img width="371" height="272" alt="Screenshot 2026-07-21 133840" src="https://github.com/user-attachments/assets/412060c4-e9d3-40c2-aa5a-ba33e6aa977a" />
 
 ---
 
@@ -46,7 +48,6 @@ This iteration resolves key limitations of the previous ROV (positive buoyancy p
 https://github.com/user-attachments/assets/a4059753-8d77-4097-9e0c-ac4d6053b122
 
 
-<img width="371" height="272" alt="Screenshot 2026-07-21 133840" src="https://github.com/user-attachments/assets/412060c4-e9d3-40c2-aa5a-ba33e6aa977a" />
 <img width="1600" height="876" alt="image" src="https://github.com/user-attachments/assets/0aab0efa-00b3-45fc-af13-3772f7ead140" />
 
 
