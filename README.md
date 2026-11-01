@@ -22,6 +22,7 @@ This iteration resolves key limitations of the previous ROV (positive buoyancy p
 * **Hydrodynamic Drag & Thrust Analysis:**
   * **Forward/Backward Motion Drag:** ~52 N (total thrust required with 1.5x safety factor: 78 N, amounting to ~27.5 N per thruster).
   * **Vertical Motion Drag:** ~109 N.
+<img width="371" height="272" alt="image" src="https://github.com/user-attachments/assets/c3e6cc42-ad01-4e27-8ae5-0ff478438785" />      <img width="371" height="272" alt="Screenshot 2026-07-21 133840" src="https://github.com/user-attachments/assets/412060c4-e9d3-40c2-aa5a-ba33e6aa977a" />
 
 ### 2. Electronics Subsystem
 * **Propulsion:** Eustance Technology ET03e subsea thrusters (400KV BLDC motor, 60mm tri-blade ducted propeller, max thrust 2.7 kgf, depth rating up to 150m).
