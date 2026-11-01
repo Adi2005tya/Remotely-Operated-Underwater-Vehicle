@@ -1,12 +1,12 @@
 
-``` markdown
+
 # Remotely Operated Underwater Vehicle (ROV)
 
 A modular 6-Degree-of-Freedom (6-DOF) Remotely Operated Underwater Vehicle engineered for subsea exploration, featuring an 8-thruster vector layout, custom power distribution architecture, and a ROS2/Stonefish simulation framework.
 
 ---
 
-## 📌 Project Overview & Objectives
+##  Project Overview & Objectives
 This iteration resolves key limitations of the previous ROV (positive buoyancy preventing deep diving, hull water leakage, and 4-DOF motion constraints) by introducing:
 * **6-DOF Maneuverability:** Full vector control over surge, sway, heave, roll, pitch, and yaw.
 * **Enhanced Waterproofing & Structural Integrity:** Heavy-duty chassis designed with modular frame plates and sealed electronics enclosures.
@@ -14,7 +14,7 @@ This iteration resolves key limitations of the previous ROV (positive buoyancy p
 
 ---
 
-## 🏗️ Subsystem Breakdown
+##  Subsystem Breakdown
 
 ### 1. Mechanical Subsystem
 * **Chassis Design:** Custom aerodynamic side and top frame plates modeled in SolidWorks to reduce hydrodynamic drag and lift forces while providing mounting slots for cameras and ultrasonic sensors.
@@ -36,14 +36,12 @@ This iteration resolves key limitations of the previous ROV (positive buoyancy p
 
 ---
 
-## 🔗 Demos & Resources
+##  Demos & Resources
 * [Workflow Overview Video](https://drive.google.com/file/d/1tumq7myhD0F0fn916JNyVTQZ7rnXnrdl/view?usp=sharing)
 * [Thruster Test Rig Demo](https://drive.google.com/file/d/17q8BuS4U6lU7hv4bZlOOMpbZ4kT4iIvW/view?usp=sharing)
 * [Stonefish Simulation Demo](https://drive.google.com/file/d/1GcuKHrodTHqe-r14VugnsbsC-ehGKpWe/view?usp=sharing)
 
-```
 
-Would you like me to save this README content to a new Google Doc in your Drive, or add any additional sections such as installation steps or wiring pinouts?
 
 https://github.com/user-attachments/assets/a4059753-8d77-4097-9e0c-ac4d6053b122
 
