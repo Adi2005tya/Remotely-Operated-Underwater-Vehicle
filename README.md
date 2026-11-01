@@ -33,13 +33,18 @@ This iteration resolves key limitations of the previous ROV (positive buoyancy p
 * **Control Stack:** Microcontroller interface using an STM32 communicating with a Jetson Nano for bi-directional ESC control.
 * **Power Distribution Board (PDB):** Custom PCB designed in KiCad tailored for 6S ESCs, integrating a 12V buck converter for the Jetson Nano, XT30 connectors, status LEDs, and power switches.
 
+  <img width="402" height="612" alt="image" src="https://github.com/user-attachments/assets/c66937cd-699b-4db2-ba7d-05aa7e2f4551" />
+
+
 ### 3. Simulation Subsystem
 * **Environments:** Virtual prototyping in ROS2 Humble (Gazebo) and Stonefish Underwater Simulator.
 * **URDF & Mesh Optimization:** Decimated SolidWorks STL mesh complexity from ~200,000 faces down to ~20,000 faces to eliminate simulation lag.
 * **Axis Realignment:** Re-oriented URDF mesh coordinates from ENU (East-North-Up) to NED (North-East-Down) convention using Blender for Stonefish compatibility.
 * **Teleoperation:** Real-time joystick control integrated with the virtual underwater model.
   
-<img width="371" height="272" alt="Screenshot 2026-07-21 133840" src="https://github.com/user-attachments/assets/412060c4-e9d3-40c2-aa5a-ba33e6aa977a" />
+  https://github.com/user-attachments/assets/a4059753-8d77-4097-9e0c-ac4d6053b122
+  
+
 
 ---
 
