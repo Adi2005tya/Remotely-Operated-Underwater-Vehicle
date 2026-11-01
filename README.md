@@ -4,8 +4,8 @@ https://github.com/user-attachments/assets/a4059753-8d77-4097-9e0c-ac4d6053b122
 
 
 <img width="371" height="272" alt="Screenshot 2026-07-21 133840" src="https://github.com/user-attachments/assets/412060c4-e9d3-40c2-aa5a-ba33e6aa977a" />
+<img width="1600" height="876" alt="image" src="https://github.com/user-attachments/assets/0aab0efa-00b3-45fc-af13-3772f7ead140" />
 
-<img width="781" height="477" alt="Screenshot 2026-07-21 133926" src="https://github.com/user-attachments/assets/6ff121a6-42f3-4dd9-86ca-2b6006142770" />
 
 
 
