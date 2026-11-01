@@ -1,4 +1,49 @@
 
+``` markdown
+# Remotely Operated Underwater Vehicle (ROV)
+
+A modular 6-Degree-of-Freedom (6-DOF) Remotely Operated Underwater Vehicle engineered for subsea exploration, featuring an 8-thruster vector layout, custom power distribution architecture, and a ROS2/Stonefish simulation framework.
+
+---
+
+## 📌 Project Overview & Objectives
+This iteration resolves key limitations of the previous ROV (positive buoyancy preventing deep diving, hull water leakage, and 4-DOF motion constraints) by introducing:
+* **6-DOF Maneuverability:** Full vector control over surge, sway, heave, roll, pitch, and yaw.
+* **Enhanced Waterproofing & Structural Integrity:** Heavy-duty chassis designed with modular frame plates and sealed electronics enclosures.
+* **Virtual Simulation Pipeline:** ROS2 Humble and Stonefish underwater simulator integration for virtual teleoperation.
+
+---
+
+## 🏗️ Subsystem Breakdown
+
+### 1. Mechanical Subsystem
+* **Chassis Design:** Custom aerodynamic side and top frame plates modeled in SolidWorks to reduce hydrodynamic drag and lift forces while providing mounting slots for cameras and ultrasonic sensors.
+* **Thruster Layout:** 8-thruster vector configuration to execute multi-directional movement.
+* **Hydrodynamic Drag & Thrust Analysis:**
+  * **Forward/Backward Motion Drag:** ~52 N (total thrust required with 1.5x safety factor: 78 N, amounting to ~27.5 N per thruster).
+  * **Vertical Motion Drag:** ~109 N.
+
+### 2. Electronics Subsystem
+* **Propulsion:** Eustance Technology ET03e subsea thrusters (400KV BLDC motor, 60mm tri-blade ducted propeller, max thrust 2.7 kgf, depth rating up to 150m).
+* **Control Stack:** Microcontroller interface using an STM32 communicating with a Jetson Nano for bi-directional ESC control.
+* **Power Distribution Board (PDB):** Custom PCB designed in KiCad tailored for 6S ESCs, integrating a 12V buck converter for the Jetson Nano, XT30 connectors, status LEDs, and power switches.
+
+### 3. Simulation Subsystem
+* **Environments:** Virtual prototyping in ROS2 Humble (Gazebo) and Stonefish Underwater Simulator.
+* **URDF & Mesh Optimization:** Decimated SolidWorks STL mesh complexity from ~200,000 faces down to ~20,000 faces to eliminate simulation lag.
+* **Axis Realignment:** Re-oriented URDF mesh coordinates from ENU (East-North-Up) to NED (North-East-Down) convention using Blender for Stonefish compatibility.
+* **Teleoperation:** Real-time joystick control integrated with the virtual underwater model.
+
+---
+
+## 🔗 Demos & Resources
+* [Workflow Overview Video](https://drive.google.com/file/d/1tumq7myhD0F0fn916JNyVTQZ7rnXnrdl/view?usp=sharing)
+* [Thruster Test Rig Demo](https://drive.google.com/file/d/17q8BuS4U6lU7hv4bZlOOMpbZ4kT4iIvW/view?usp=sharing)
+* [Stonefish Simulation Demo](https://drive.google.com/file/d/1GcuKHrodTHqe-r14VugnsbsC-ehGKpWe/view?usp=sharing)
+
+```
+
+Would you like me to save this README content to a new Google Doc in your Drive, or add any additional sections such as installation steps or wiring pinouts?
 
 https://github.com/user-attachments/assets/a4059753-8d77-4097-9e0c-ac4d6053b122
 
@@ -10,6 +55,5 @@ https://github.com/user-attachments/assets/a4059753-8d77-4097-9e0c-ac4d6053b122
 
 
 
-The main aim of this project is to develop a functional prototype of a Remotely Operated Underwater vehicle. One of the drawbacks encountered in the previous ROV was the fact that the bot was positively buoyant and it was floating on the surface without going too deep in the water. The second hurdle that we faced was related to water proofing. During several tests the water would often seep into the hull putting several electronic components at the risk of short-circuiting. Finally, the previous version of the ROV had only 4 degrees of freedom provided by a 4-thruster configuration. Pitching forward and backward was restricted and it wasn’t able to move sideways either. Thus, this gave us the opportunity to rebuild a new ROV with greater strength and weight, more modularity, enhanced water-proofing and greater mobility underwater.
 
 
