@@ -33,7 +33,7 @@ This iteration resolves key limitations of the previous ROV (positive buoyancy p
 * **Control Stack:** Microcontroller interface using an STM32 communicating with a Jetson Nano for bi-directional ESC control.
 * **Power Distribution Board (PDB):** Custom PCB designed in KiCad tailored for 6S ESCs, integrating a 12V buck converter for the Jetson Nano, XT30 connectors, status LEDs, and power switches.
 
-  <img width="402" height="612" alt="image" src="https://github.com/user-attachments/assets/c66937cd-699b-4db2-ba7d-05aa7e2f4551" />
+  <img width="402" height="500" alt="image" src="https://github.com/user-attachments/assets/c66937cd-699b-4db2-ba7d-05aa7e2f4551" />
 
 
 ### 3. Simulation Subsystem
@@ -54,11 +54,6 @@ This iteration resolves key limitations of the previous ROV (positive buoyancy p
 * [Stonefish Simulation Demo](https://drive.google.com/file/d/1GcuKHrodTHqe-r14VugnsbsC-ehGKpWe/view?usp=sharing)
 
 
-
-https://github.com/user-attachments/assets/a4059753-8d77-4097-9e0c-ac4d6053b122
-
-
-<img width="1600" height="876" alt="image" src="https://github.com/user-attachments/assets/0aab0efa-00b3-45fc-af13-3772f7ead140" />
 
 
 
